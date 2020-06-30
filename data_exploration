@@ -1,1 +1,26 @@
+#Import the required packages
 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import style
+import seaborn as sns 
+%matplotlib inline
+
+NYC_Data = pd.read_csv("311_Service_Requests_from_2010_to_Present.csv",",")
+
+NYC_Data.head()
+
+NYC_Data.shape
+
+NYC_Data.size
+
+NYC_Data.columns
+
+NYC_Data["Complaint Type"].value_counts()
+
+id(NYC_Data)
+
+NYC_Data.fillna("Unknown City")
+
+id(NYC_Data.fillna("Unknown City"))
